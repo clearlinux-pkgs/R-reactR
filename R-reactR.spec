@@ -4,17 +4,17 @@
 #
 Name     : R-reactR
 Version  : 0.4.1
-Release  : 15
+Release  : 16
 URL      : https://cran.r-project.org/src/contrib/reactR_0.4.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/reactR_0.4.1.tar.gz
 Summary  : React Helpers
 Group    : Development/Tools
 License  : MIT
 Requires: R-htmltools
-Requires: R-htmlwidgets
 BuildRequires : R-htmltools
 BuildRequires : R-htmlwidgets
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 # reactR <img src="vignettes/logo.svg" alt="reactR logo" width="100px" />
@@ -32,10 +32,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1562519629
+export SOURCE_DATE_EPOCH=1571885556
 
 %install
-export SOURCE_DATE_EPOCH=1562519629
+export SOURCE_DATE_EPOCH=1571885556
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
