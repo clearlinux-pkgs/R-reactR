@@ -4,43 +4,38 @@
 #
 Name     : R-reactR
 Version  : 0.4.2
-Release  : 20
+Release  : 21
 URL      : https://cran.r-project.org/src/contrib/reactR_0.4.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/reactR_0.4.2.tar.gz
 Summary  : React Helpers
 Group    : Development/Tools
 License  : MIT
 Requires: R-htmltools
-Requires: R-htmlwidgets
 BuildRequires : R-htmltools
-BuildRequires : R-htmlwidgets
 BuildRequires : buildreq-R
 
 %description
-# reactR <img src="vignettes/logo.svg" alt="reactR logo" width="100px" />
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/reactR)](https://cran.r-project.org/package=reactR)
-[![Travis-CI Build
-Status](https://travis-ci.org/react-R/reactR.svg?branch=master)](https://travis-ci.org/react-R/reactR)
-[![Slack
-Status](https://reactr-slackin.herokuapp.com/badge.svg)](https://reactr-slackin.herokuapp.com/)
+helper dependency functions, an embedded 'Babel' 'transpiler',
+              and examples.
 
 %prep
 %setup -q -c -n reactR
+cd %{_builddir}/reactR
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1579882962
+export SOURCE_DATE_EPOCH=1589770097
 
 %install
-export SOURCE_DATE_EPOCH=1579882962
+export SOURCE_DATE_EPOCH=1589770097
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
