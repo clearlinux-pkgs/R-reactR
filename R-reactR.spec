@@ -4,7 +4,7 @@
 #
 Name     : R-reactR
 Version  : 0.4.3
-Release  : 23
+Release  : 24
 URL      : https://cran.r-project.org/src/contrib/reactR_0.4.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/reactR_0.4.3.tar.gz
 Summary  : React Helpers
