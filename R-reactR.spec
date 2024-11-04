@@ -7,7 +7,7 @@
 #
 Name     : R-reactR
 Version  : 0.6.1
-Release  : 49
+Release  : 50
 URL      : https://cran.r-project.org/src/contrib/reactR_0.6.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/reactR_0.6.1.tar.gz
 Summary  : React Helpers
